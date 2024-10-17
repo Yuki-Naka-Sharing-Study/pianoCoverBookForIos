@@ -14,20 +14,8 @@ struct SettingView: View {
     var body: some View {
         NavigationStack {
             listView()
-                .toolbar(content: toolbarContent)
                 .navigationTitle("設定")
                 .navigationBarTitleDisplayMode(.inline)
-        }
-    }
-    
-    @ToolbarContentBuilder
-    private func toolbarContent() -> some ToolbarContent {
-        ToolbarItem(placement: .topBarLeading) {
-            Button {
-                dismiss()
-            } label: {
-                Image.xmark
-            }
         }
     }
     

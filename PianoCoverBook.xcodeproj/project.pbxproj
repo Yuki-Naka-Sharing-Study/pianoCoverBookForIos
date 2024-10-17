@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1633BD72CC0F44200DF824D /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1633BD62CC0F44200DF824D /* ConfirmView.swift */; };
 		D17751E72CC0E9FC00091917 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17751E62CC0E9FC00091917 /* SettingView.swift */; };
 		D17751E92CC0EA6900091917 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17751E82CC0EA6900091917 /* Image.swift */; };
 		D1835E592CC09E790024B550 /* PianoCoverBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1835E582CC09E790024B550 /* PianoCoverBookApp.swift */; };
 		D1835E5B2CC09E790024B550 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1835E5A2CC09E790024B550 /* ContentView.swift */; };
 		D1835E5D2CC09E7A0024B550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1835E5C2CC09E7A0024B550 /* Assets.xcassets */; };
 		D1835E602CC09E7A0024B550 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1835E5F2CC09E7A0024B550 /* Preview Assets.xcassets */; };
-		D1835E672CC09F1D0024B550 /* PianoCoverPercentge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1835E662CC09F1D0024B550 /* PianoCoverPercentge.swift */; };
+		D1835E672CC09F1D0024B550 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1835E662CC09F1D0024B550 /* RecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1633BD62CC0F44200DF824D /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		D17751E62CC0E9FC00091917 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		D17751E82CC0EA6900091917 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D1835E552CC09E790024B550 /* PianoCoverBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoCoverBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,7 +26,7 @@
 		D1835E5A2CC09E790024B550 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1835E5C2CC09E7A0024B550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1835E5F2CC09E7A0024B550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D1835E662CC09F1D0024B550 /* PianoCoverPercentge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoCoverPercentge.swift; sourceTree = "<group>"; };
+		D1835E662CC09F1D0024B550 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,12 @@
 			children = (
 				D1835E582CC09E790024B550 /* PianoCoverBookApp.swift */,
 				D1835E5A2CC09E790024B550 /* ContentView.swift */,
-				D1835E662CC09F1D0024B550 /* PianoCoverPercentge.swift */,
+				D1835E662CC09F1D0024B550 /* RecordView.swift */,
 				D17751E62CC0E9FC00091917 /* SettingView.swift */,
 				D17751E82CC0EA6900091917 /* Image.swift */,
 				D1835E5C2CC09E7A0024B550 /* Assets.xcassets */,
 				D1835E5E2CC09E7A0024B550 /* Preview Content */,
+				D1633BD62CC0F44200DF824D /* ConfirmView.swift */,
 			);
 			path = PianoCoverBook;
 			sourceTree = "<group>";
@@ -148,9 +151,10 @@
 			files = (
 				D1835E5B2CC09E790024B550 /* ContentView.swift in Sources */,
 				D17751E72CC0E9FC00091917 /* SettingView.swift in Sources */,
-				D1835E672CC09F1D0024B550 /* PianoCoverPercentge.swift in Sources */,
+				D1835E672CC09F1D0024B550 /* RecordView.swift in Sources */,
 				D1835E592CC09E790024B550 /* PianoCoverBookApp.swift in Sources */,
 				D17751E92CC0EA6900091917 /* Image.swift in Sources */,
+				D1633BD72CC0F44200DF824D /* ConfirmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
