@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ConfirmView: View {
     var body: some View {
-        Text("これは記録確認用のViewです")
+        Text("まだ記録がありません。\nピアノを練習して記録を追加しましょう。")
+            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
