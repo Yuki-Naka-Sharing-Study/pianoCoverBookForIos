@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Circles_Trim_Outline()
+        PianoCoverPercentge()
     }
 }
 
 #Preview {
-    Circles_Trim_Outline()
+    PianoCoverPercentge()
 }

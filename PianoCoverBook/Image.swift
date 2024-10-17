@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct Image: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension Image {
+    /// 画像の基本設定
+    func resizableScaledToFit() -> some View {
+        self
+            .resizable()
+            .scaledToFit()
     }
+    
+    static let gearshape        = Image(systemName: "gearshape")
+    static let arrowupArrowdown = Image(systemName: "arrow.up.arrow.down")
+    static let plus             = Image(systemName: "plus")
+    static let pencilCircle     = Image(systemName: "pencil.circle")
+    static let plusCircle       = Image(systemName: "plus.circle")
+    static let trash            = Image(systemName: "trash")
+    static let xmark            = Image(systemName: "xmark")
+    static let photoBadgePlus   = Image(systemName: "photo.badge.plus")
 }
 
-#Preview {
-    Image()
-}

@@ -11,7 +11,7 @@ import SwiftUI
 struct PianoCoverBookApp: App {
     var body: some Scene {
         WindowGroup {
-            Circles_Trim_Outline()
+            PianoCoverPercentge()
         }
     }
 }
