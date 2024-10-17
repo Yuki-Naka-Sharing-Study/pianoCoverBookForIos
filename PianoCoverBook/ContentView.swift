@@ -14,19 +14,19 @@ struct ContentView: View {
         TabView(selection:$selection) {
             ConfirmView()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("記録確認", systemImage: "magnifyingglass")
                 }
                 .tag(1)
             
             RecordView()
                 .tabItem {
-                    Label("Profile", systemImage: "person")
+                    Label("記録する", systemImage: "pencil")
                 }
                 .tag(2)
             
             SettingView()
                 .tabItem {
-                    Label("Settings", systemImage: "gearshape")
+                    Label("設定", systemImage: "gearshape")
                 }
                 .tag(3)
         }

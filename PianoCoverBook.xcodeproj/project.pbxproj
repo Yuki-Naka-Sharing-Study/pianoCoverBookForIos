@@ -63,10 +63,10 @@
 				D1835E5A2CC09E790024B550 /* ContentView.swift */,
 				D1835E662CC09F1D0024B550 /* RecordView.swift */,
 				D17751E62CC0E9FC00091917 /* SettingView.swift */,
+				D1633BD62CC0F44200DF824D /* ConfirmView.swift */,
 				D17751E82CC0EA6900091917 /* Image.swift */,
 				D1835E5C2CC09E7A0024B550 /* Assets.xcassets */,
 				D1835E5E2CC09E7A0024B550 /* Preview Content */,
-				D1633BD62CC0F44200DF824D /* ConfirmView.swift */,
 			);
 			path = PianoCoverBook;
 			sourceTree = "<group>";
