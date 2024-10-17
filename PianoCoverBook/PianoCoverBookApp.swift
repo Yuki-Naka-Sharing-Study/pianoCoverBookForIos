@@ -12,6 +12,7 @@ struct PianoCoverBookApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            Circles_Trim_Outline()
         }
     }
 }

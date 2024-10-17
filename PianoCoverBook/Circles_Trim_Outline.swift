@@ -9,8 +9,10 @@ import SwiftUI
 
 struct Circles_Trim_Outline : View {
     @State private var text: String = ""
-    @State private var circleProgress: CGFloat = 1.0
-    private var circlePercentage: Int { Int(circleProgress * 100.0) }
+    @State private var rightHandCircleProgress: CGFloat = 1.0
+    @State private var leftHandCircleProgress: CGFloat = 1.0
+    private var rightHandCirclePercentage: Int { Int(rightHandCircleProgress * 100.0) }
+    private var leftHandCirclePercentage: Int { Int(leftHandCircleProgress * 100.0) }
     
     var body: some View {
         ZStack {
@@ -32,14 +34,14 @@ struct Circles_Trim_Outline : View {
                 Text("右手のカバー度").font(.largeTitle)
                 
                 Circle()
-                    .trim(from: 0, to: circleProgress)
+                    .trim(from: 0, to: rightHandCircleProgress)
                     .stroke(Color.purple,
                             style: StrokeStyle(lineWidth: 10,
                                                lineCap: CGLineCap.round))
                     .frame(height: 150)
                     .rotationEffect(.degrees(-90)) // Start from top
                     .overlay(
-                        Text("\(circlePercentage)%")
+                        Text("\(rightHandCirclePercentage)%")
                             .font(.largeTitle)
                             .foregroundStyle(.black))
                     .padding(10)
@@ -48,7 +50,7 @@ struct Circles_Trim_Outline : View {
                     Text("Progress")
                     HStack {
                         Text("0%")
-                        Slider(value: $circleProgress)
+                        Slider(value: $rightHandCircleProgress)
                         Text("100%")
                     }
                 }.padding()
@@ -56,14 +58,14 @@ struct Circles_Trim_Outline : View {
                 Text("左手のカバー度").font(.largeTitle)
                 
                 Circle()
-                    .trim(from: 0, to: circleProgress)
+                    .trim(from: 0, to: leftHandCircleProgress)
                     .stroke(Color.purple,
                             style: StrokeStyle(lineWidth: 10,
                                                lineCap: CGLineCap.round))
                     .frame(height: 150)
                     .rotationEffect(.degrees(-90)) // Start from top
                     .overlay(
-                        Text("\(circlePercentage)%")
+                        Text("\(leftHandCirclePercentage)%")
                             .font(.largeTitle)
                             .foregroundStyle(.black))
                     .padding(10)
@@ -72,7 +74,7 @@ struct Circles_Trim_Outline : View {
                     Text("Progress")
                     HStack {
                         Text("0%")
-                        Slider(value: $circleProgress)
+                        Slider(value: $leftHandCircleProgress)
                         Text("100%")
                     }
                 }.padding()
