@@ -105,6 +105,8 @@ struct RecordView : View {
                             .padding(.trailing)
                     }
                 }
+                
+                Button("記録する", action: {}).buttonStyle(.borderedProminent)
             }
         }
     }
