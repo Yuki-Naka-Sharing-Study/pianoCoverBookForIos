@@ -38,7 +38,7 @@ struct Circles_Trim_Outline : View {
                 }
                 
                 HStack {
-                    Text("カバー曲")
+                    Text("曲名")
                         .font(.title3)
                         .padding(.leading)
                         .padding(.bottom)
