@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Circles_Trim_Outline : View {
+struct PianoCoverPercentge : View {
     @State private var artistName: String = ""
     @State private var musicName: String = ""
     
@@ -112,10 +112,10 @@ struct Circles_Trim_Outline : View {
 
 struct Circles_Trim_Outline_Previews : PreviewProvider {
     static var previews: some View {
-        Circles_Trim_Outline()
+        PianoCoverPercentge()
     }
 }
 
 #Preview {
-    Circles_Trim_Outline()
+    PianoCoverPercentge()
 }
