@@ -34,5 +34,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    RecordView()
+    ContentView()
 }
