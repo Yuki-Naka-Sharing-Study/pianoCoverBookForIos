@@ -40,6 +40,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1633BD82CC1047A00DF824D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1835E5A2CC09E790024B550 /* ContentView.swift */,
+				D1835E662CC09F1D0024B550 /* RecordView.swift */,
+				D17751E62CC0E9FC00091917 /* SettingView.swift */,
+				D1633BD62CC0F44200DF824D /* ConfirmView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1633BD92CC104A100DF824D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D1633BDA2CC104AD00DF824D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1633BDB2CC104B600DF824D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		D1835E4C2CC09E790024B550 = {
 			isa = PBXGroup;
 			children = (
@@ -59,11 +91,11 @@
 		D1835E572CC09E790024B550 /* PianoCoverBook */ = {
 			isa = PBXGroup;
 			children = (
+				D1633BDB2CC104B600DF824D /* Repositories */,
+				D1633BDA2CC104AD00DF824D /* Models */,
+				D1633BD92CC104A100DF824D /* ViewModels */,
+				D1633BD82CC1047A00DF824D /* Views */,
 				D1835E582CC09E790024B550 /* PianoCoverBookApp.swift */,
-				D1835E5A2CC09E790024B550 /* ContentView.swift */,
-				D1835E662CC09F1D0024B550 /* RecordView.swift */,
-				D17751E62CC0E9FC00091917 /* SettingView.swift */,
-				D1633BD62CC0F44200DF824D /* ConfirmView.swift */,
 				D17751E82CC0EA6900091917 /* Image.swift */,
 				D1835E5C2CC09E7A0024B550 /* Assets.xcassets */,
 				D1835E5E2CC09E7A0024B550 /* Preview Content */,

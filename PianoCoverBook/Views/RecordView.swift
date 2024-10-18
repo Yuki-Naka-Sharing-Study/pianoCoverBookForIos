@@ -50,6 +50,21 @@ struct RecordView : View {
                                 .stroke(Color.gray, lineWidth: 2)
                         )
                         .padding(.horizontal)
+                }
+                
+                HStack {
+                    Text("メモ")
+                        .font(.title3)
+                        .padding(.leading)
+                        .padding(.bottom)
+                    TextField("アルペジオが上手く弾けない。", text: $musicName)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.gray, lineWidth: 2)
+                        )
+                        .padding(.horizontal)
                         .padding(.bottom)
                 }
                 
