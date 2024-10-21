@@ -43,10 +43,9 @@ struct ConfirmView: View {
                     Text("左手の習熟度")
                     Text("100%")
                 }
-            }
-            .padding()
-            
-            Grid(alignment: .leading) {
+                
+                Spacer()
+                
                 GridRow {
                     Text("曲名")
                     Text("ノクターン")
@@ -66,10 +65,9 @@ struct ConfirmView: View {
                     Text("左手の習熟度")
                     Text("90%")
                 }
-            }
-            .padding()
-            
-            Grid(alignment: .leading) {
+                
+                Spacer()
+                
                 GridRow {
                     Text("曲名")
                     Text("主よ人の望みの喜びよ")
