@@ -67,7 +67,7 @@ struct RecordView : View {
                         .padding(.bottom)
                 }
                 
-                Text("右手のカバー度")
+                Text("右手の習熟度")
                     .font(.title3)
                 
                 Circle()
@@ -93,7 +93,7 @@ struct RecordView : View {
                     }
                 }
                 
-                Text("左手のカバー度")
+                Text("左手の習熟度")
                     .font(.title3)
                     .padding(.top)
                 
