@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct PianoCoverBookApp: App {
+struct PianoCoverBookApp: App {    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -41,7 +41,6 @@ struct RecordView : View {
                     Text("曲名")
                         .font(.title3)
                         .padding(.leading)
-                        .padding(.bottom)
                     TextField("ラ・カンパネラ", text: $musicName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
