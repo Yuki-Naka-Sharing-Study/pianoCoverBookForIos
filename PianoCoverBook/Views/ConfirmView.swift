@@ -19,10 +19,80 @@ struct ConfirmView: View {
                 Text("まだ何も記録されていません。")
                 Text(nameOfArtist)
                     .fontWeight(.bold)
-                Spacer()
             }
             .font(.title)
             .navigationTitle(Text("記録"))
+            
+            Grid(alignment: .leading) {
+                GridRow {
+                    Text("曲名")
+                    Text("ラ・カンパネラ")
+                }
+                Divider()
+                GridRow {
+                    Text("アーティスト名")
+                    Text("リスト")
+                }
+                Divider()
+                GridRow {
+                    Text("右手の習熟度")
+                    Text("100%")
+                }
+                Divider()
+                GridRow {
+                    Text("左手の習熟度")
+                    Text("100%")
+                }
+            }
+            .padding()
+            
+            Grid(alignment: .leading) {
+                GridRow {
+                    Text("曲名")
+                    Text("ノクターン")
+                }
+                Divider()
+                GridRow {
+                    Text("アーティスト名")
+                    Text("ショパン")
+                }
+                Divider()
+                GridRow {
+                    Text("右手の習熟度")
+                    Text("90%")
+                }
+                Divider()
+                GridRow {
+                    Text("左手の習熟度")
+                    Text("90%")
+                }
+            }
+            .padding()
+            
+            Grid(alignment: .leading) {
+                GridRow {
+                    Text("曲名")
+                    Text("主よ人の望みの喜びよ")
+                }
+                Divider()
+                GridRow {
+                    Text("アーティスト名")
+                    Text("バッハ")
+                }
+                Divider()
+                GridRow {
+                    Text("右手の習熟度")
+                    Text("80%")
+                }
+                Divider()
+                GridRow {
+                    Text("左手の習熟度")
+                    Text("80%")
+                }
+            }
+            .padding()
+            
+            Spacer()
         }
         .searchable(
             text: $nameOfArtistsSearch,
