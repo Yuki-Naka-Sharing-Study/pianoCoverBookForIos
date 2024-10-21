@@ -31,10 +31,6 @@ struct ConfirmView: View {
                 description: Text("まだ何も記録されていません。")
             )
         } else {
-            List(items) { item in
-                Text(item.nameOfMusic)
-            }
-            
             NavigationStack {
                 VStack(spacing: 20.0) {
                     Text(nameOfArtist)
@@ -42,90 +38,6 @@ struct ConfirmView: View {
                 }
                 .font(.title)
                 .navigationTitle(Text("記録"))
-                
-                Grid(alignment: .leading) {
-                    GridRow {
-                        Text("曲名")
-                        Text("ラ・カンパネラ")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("アーティスト名")
-                        Text("リスト")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("メモ")
-                        Text("完璧に弾ける")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("右手の習熟度")
-                        Text("100%")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("左手の習熟度")
-                        Text("100%")
-                    }
-                    
-                    Spacer()
-                    
-                    GridRow {
-                        Text("曲名")
-                        Text("ノクターン")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("アーティスト名")
-                        Text("ショパン")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("メモ")
-                        Text("後半が難しい")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("右手の習熟度")
-                        Text("90%")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("左手の習熟度")
-                        Text("90%")
-                    }
-                    
-                    Spacer()
-                    
-                    GridRow {
-                        Text("曲名")
-                        Text("主よ人の望みの喜びよ")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("アーティスト名")
-                        Text("バッハ")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("メモ")
-                        Text("前半が難しい")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("右手の習熟度")
-                        Text("80%")
-                    }
-                    Divider()
-                    GridRow {
-                        Text("左手の習熟度")
-                        Text("80%")
-                    }
-                }
-                .padding()
-                
-                Spacer()
             }
             .searchable(
                 text: $nameOfArtistsSearch,
@@ -142,6 +54,9 @@ struct ConfirmView: View {
                 searchResults = nameOfArtists.filter { name in
                     name.hasPrefix(nameOfArtistsSearch)
                 }
+            }
+            List(items) { item in
+                Text(item.nameOfMusic)
             }
         }
     }
