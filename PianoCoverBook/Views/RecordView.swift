@@ -24,10 +24,10 @@ struct RecordView : View {
             VStack(spacing: 10) {
                 
                 HStack {
-                    Text("アーティスト名")
+                    Text("曲名")
                         .font(.title3)
                         .padding(.leading)
-                    TextField("リスト", text: $artistName)
+                    TextField("ラ・カンパネラ", text: $artistName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
                         .overlay(
@@ -38,10 +38,10 @@ struct RecordView : View {
                 }
                 
                 HStack {
-                    Text("曲名")
+                    Text("アーティスト名")
                         .font(.title3)
                         .padding(.leading)
-                    TextField("ラ・カンパネラ", text: $musicName)
+                    TextField("リスト", text: $musicName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
                         .overlay(

@@ -35,6 +35,11 @@ struct ConfirmView: View {
                 }
                 Divider()
                 GridRow {
+                    Text("メモ")
+                    Text("完璧に弾ける")
+                }
+                Divider()
+                GridRow {
                     Text("右手の習熟度")
                     Text("100%")
                 }
@@ -57,6 +62,11 @@ struct ConfirmView: View {
                 }
                 Divider()
                 GridRow {
+                    Text("メモ")
+                    Text("後半が難しい")
+                }
+                Divider()
+                GridRow {
                     Text("右手の習熟度")
                     Text("90%")
                 }
@@ -76,6 +86,11 @@ struct ConfirmView: View {
                 GridRow {
                     Text("アーティスト名")
                     Text("バッハ")
+                }
+                Divider()
+                GridRow {
+                    Text("メモ")
+                    Text("前半が難しい")
                 }
                 Divider()
                 GridRow {
