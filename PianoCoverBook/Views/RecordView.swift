@@ -11,10 +11,6 @@ struct RecordView : View {
     @Environment(\.dismiss) private var dismiss
     @ObservedObject var viewModel: RecordViewModel
     
-    @State private var artistName: String = ""
-    @State private var musicName: String = ""
-    @State private var memo: String = ""
-    
     @State private var rightHandCircleProgress: CGFloat = 1.0
     @State private var leftHandCircleProgress: CGFloat = 1.0
     
