@@ -18,7 +18,7 @@ struct ContentView: View {
                 }
                 .tag(1)
             
-            RecordView()
+            RecordView(viewModel: RecordViewModel())
                 .tabItem {
                     Label("記録する", systemImage: "pencil")
                 }

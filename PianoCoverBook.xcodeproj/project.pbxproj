@@ -17,6 +17,9 @@
 		D1835E672CC09F1D0024B550 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1835E662CC09F1D0024B550 /* RecordView.swift */; };
 		D1A04DA72CE1981900A4FB1D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D1A04DA62CE1981900A4FB1D /* Realm */; };
 		D1A04DA92CE1981900A4FB1D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D1A04DA82CE1981900A4FB1D /* RealmSwift */; };
+		D1A04DE22CE1C74600A4FB1D /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A04DE12CE1C74600A4FB1D /* RecordViewModel.swift */; };
+		D1A04DE42CE1C78600A4FB1D /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A04DE32CE1C78600A4FB1D /* RecordModel.swift */; };
+		D1A04DE62CE1C7C100A4FB1D /* KaraMojiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A04DE52CE1C7C100A4FB1D /* KaraMojiRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		D1835E5C2CC09E7A0024B550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1835E5F2CC09E7A0024B550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1835E662CC09F1D0024B550 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		D1A04DE12CE1C74600A4FB1D /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		D1A04DE32CE1C78600A4FB1D /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		D1A04DE52CE1C7C100A4FB1D /* KaraMojiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaraMojiRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		D1633BD92CC104A100DF824D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D1A04DE12CE1C74600A4FB1D /* RecordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -65,6 +72,7 @@
 		D1633BDA2CC104AD00DF824D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D1A04DE32CE1C78600A4FB1D /* RecordModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -72,6 +80,7 @@
 		D1633BDB2CC104B600DF824D /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				D1A04DE52CE1C7C100A4FB1D /* KaraMojiRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -193,8 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1835E5B2CC09E790024B550 /* ContentView.swift in Sources */,
+				D1A04DE22CE1C74600A4FB1D /* RecordViewModel.swift in Sources */,
 				D17751E72CC0E9FC00091917 /* SettingView.swift in Sources */,
 				D1835E672CC09F1D0024B550 /* RecordView.swift in Sources */,
+				D1A04DE42CE1C78600A4FB1D /* RecordModel.swift in Sources */,
+				D1A04DE62CE1C7C100A4FB1D /* KaraMojiRepository.swift in Sources */,
 				D1835E592CC09E790024B550 /* PianoCoverBookApp.swift in Sources */,
 				D17751E92CC0EA6900091917 /* Image.swift in Sources */,
 				D1633BD72CC0F44200DF824D /* ConfirmView.swift in Sources */,

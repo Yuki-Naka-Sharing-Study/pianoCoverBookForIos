@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RecordView : View {
+    @Environment(\.dismiss) private var dismiss
+    @ObservedObject var viewModel: RecordViewModel
+    
     @State private var artistName: String = ""
     @State private var musicName: String = ""
     
@@ -120,7 +123,13 @@ struct RecordView : View {
                     }
                 }
                 
-                Button("記録する", action: {}).buttonStyle(.borderedProminent)
+                Button(action: {
+                    dismiss()
+                }) {
+                    Text("完了")
+                }
+                .buttonStyle(.borderedProminent)
+                .disabled(viewModel.isNameEmpty)
             }
         }
     }
@@ -128,10 +137,10 @@ struct RecordView : View {
 
 struct Circles_Trim_Outline_Previews : PreviewProvider {
     static var previews: some View {
-        RecordView()
+        RecordView(viewModel: RecordViewModel())
     }
 }
 
 #Preview {
-    RecordView()
+    RecordView(viewModel: RecordViewModel())
 }
