@@ -10,5 +10,9 @@ import RealmSwift
 
 struct RecordModel {
     private let karaMojiRepository = KaraMojiRepository()
+    
     var karaMojiNameText = ""
+    var musicNameText = ""
+    var artistNameNameText = ""
+    var memoText = ""
 }

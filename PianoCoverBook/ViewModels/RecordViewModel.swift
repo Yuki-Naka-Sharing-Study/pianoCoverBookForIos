@@ -24,20 +24,20 @@ class RecordViewModel: ObservableObject {
     
     // $musicName
     var musicName: String {
-        get { model.karaMojiNameText }
-        set { model.karaMojiNameText = newValue }
+        get { model.musicNameText }
+        set { model.musicNameText = newValue }
     }
     
     // $artistName
     var artistName: String {
-        get { model.karaMojiNameText }
-        set { model.karaMojiNameText = newValue }
+        get { model.artistNameNameText }
+        set { model.artistNameNameText = newValue }
     }
     
     // $memo
     var memo: String {
-        get { model.karaMojiNameText }
-        set { model.karaMojiNameText = newValue }
+        get { model.memoText }
+        set { model.memoText = newValue }
     }
     
     // 以下、必要なコード
