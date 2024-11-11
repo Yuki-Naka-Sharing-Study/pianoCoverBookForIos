@@ -26,6 +26,16 @@ class RecordViewModel: ObservableObject {
         set { model.memoText = newValue }
     }
     
+    var rightHandCircleProgress: Int {
+        get { model.rightHandInt }
+        set { model.rightHandInt = newValue }
+    }
+    
+    var leftHandCircleProgress: Int {
+        get { model.leftHandInt }
+        set { model.leftHandInt = newValue }
+    }
+    
     var isMusicNameEmpty: Bool {
         musicName.trimmingCharacters(in: .whitespaces).isEmpty
     }

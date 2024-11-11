@@ -15,4 +15,6 @@ struct RecordModel {
     var musicNameText = ""
     var artistNameNameText = ""
     var memoText = ""
+    var rightHandInt = 0
+    var leftHandInt = 0
 }
