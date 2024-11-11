@@ -32,7 +32,7 @@ struct RecordView : View {
                         .font(.title3)
                         .padding(.leading)
                     
-                    TextField("ラ・カンパネラ", text: $musicName)
+                    TextField("ラ・カンパネラ", text: $viewModel.musicName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
                         .overlay(
@@ -46,7 +46,7 @@ struct RecordView : View {
                     Text("アーティスト名")
                         .font(.title3)
                         .padding(.leading)
-                    TextField("リスト", text: $artistName)
+                    TextField("リスト", text: $viewModel.artistName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
                         .overlay(
@@ -61,7 +61,7 @@ struct RecordView : View {
                         .font(.title3)
                         .padding(.leading)
                         .padding(.bottom)
-                    TextField("アルペジオが上手く弾けない。", text: $memo)
+                    TextField("アルペジオが上手く弾けない。", text: $viewModel.memo)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
                         .overlay(
