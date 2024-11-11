@@ -11,11 +11,11 @@ struct RecordView : View {
     @Environment(\.dismiss) private var dismiss
     @ObservedObject var viewModel: RecordViewModel
     
-    @State private var rightHandCircleProgress: CGFloat = 1.0
-    @State private var leftHandCircleProgress: CGFloat = 1.0
-    
-    private var rightHandCirclePercentage: Int { Int(rightHandCircleProgress * 100.0) }
-    private var leftHandCirclePercentage: Int { Int(leftHandCircleProgress * 100.0) }
+//    @State private var rightHandCircleProgress: CGFloat = 1.0
+//    @State private var leftHandCircleProgress: CGFloat = 1.0
+//    
+//    private var rightHandCirclePercentage: Int { Int(rightHandCircleProgress * 100.0) }
+//    private var leftHandCirclePercentage: Int { Int(leftHandCircleProgress * 100.0) }
     
     var body: some View {
         ZStack {
@@ -72,14 +72,16 @@ struct RecordView : View {
                     .font(.title3)
                 
                 Circle()
-                    .trim(from: 0, to: rightHandCircleProgress)
+//                    .trim(from: 0, to: rightHandCircleProgress)
+                    .trim(from: 0, to: viewModel.rightHandCircleProgress)
                     .stroke(Color.purple,
                             style: StrokeStyle(lineWidth: 10,
                                                lineCap: CGLineCap.round))
                     .frame(height: 150)
                     .rotationEffect(.degrees(-90))
                     .overlay(
-                        Text("\(rightHandCirclePercentage)%")
+//                        Text("\(rightHandCirclePercentage)%")
+                        Text("\(viewModel.rightHandCirclePercentage)%")
                             .font(.largeTitle)
                             .foregroundStyle(.black))
                     .padding(10)
@@ -88,7 +90,8 @@ struct RecordView : View {
                     HStack {
                         Text("0%")
                             .padding(.leading)
-                        Slider(value: $rightHandCircleProgress)
+//                        Slider(value: $rightHandCircleProgress)
+                        Slider(value: $viewModel.rightHandCircleProgress)
                         Text("100%")
                             .padding(.trailing)
                     }
@@ -99,14 +102,16 @@ struct RecordView : View {
                     .padding(.top)
                 
                 Circle()
-                    .trim(from: 0, to: leftHandCircleProgress)
+//                    .trim(from: 0, to: leftHandCircleProgress)
+                    .trim(from: 0, to: viewModel.leftHandCircleProgress)
                     .stroke(Color.purple,
                             style: StrokeStyle(lineWidth: 10,
                                                lineCap: CGLineCap.round))
                     .frame(height: 150)
                     .rotationEffect(.degrees(-90))
                     .overlay(
-                        Text("\(leftHandCirclePercentage)%")
+//                        Text("\(leftHandCirclePercentage)%")
+                        Text("\(viewModel.leftHandCirclePercentage)%")
                             .font(.largeTitle)
                             .foregroundStyle(.black))
                     .padding(10)
@@ -115,7 +120,8 @@ struct RecordView : View {
                     HStack {
                         Text("0%")
                             .padding(.leading)
-                        Slider(value: $leftHandCircleProgress)
+//                        Slider(value: $leftHandCircleProgress)
+                        Slider(value: $viewModel.leftHandCircleProgress)
                         Text("100%")
                             .padding(.trailing)
                     }

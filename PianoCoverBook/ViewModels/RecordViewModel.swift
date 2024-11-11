@@ -26,14 +26,30 @@ class RecordViewModel: ObservableObject {
         set { model.memoText = newValue }
     }
     
-    var rightHandCircleProgress: Int {
-        get { model.rightHandInt }
-        set { model.rightHandInt = newValue }
-    }
+    // 試しに書いてみたコード　「@Published」を使うのは確定。
     
-    var leftHandCircleProgress: Int {
-        get { model.leftHandInt }
-        set { model.leftHandInt = newValue }
+    @Published var rightHandCircleProgress: CGFloat = 1.0
+    @Published var leftHandCircleProgress: CGFloat = 1.0
+    
+    var rightHandCirclePercentage: Int { Int(rightHandCircleProgress * 100.0) }
+    var leftHandCirclePercentage: Int { Int(leftHandCircleProgress * 100.0) }
+    
+    var rightHandCirclePercentageNum: Int {
+        get {
+            return Int(rightHandCircleProgress * 100)
+        }
+        set {
+            model.rightHandInt = newValue
+        }
+    }
+  
+    var leftHandCirclePercentageNum: Int {
+        get {
+            return Int(leftHandCircleProgress * 100)
+        }
+        set {
+            model.leftHandInt = newValue
+        }
     }
     
     var isMusicNameEmpty: Bool {

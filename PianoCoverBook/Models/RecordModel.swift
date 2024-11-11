@@ -23,8 +23,8 @@ struct RecordModel {
         musicInfo.musicName = musicNameText
         musicInfo.artistName = artistNameNameText
         musicInfo.memo = memoText
-        musicInfo.rightHandProgress = Int(rightHandInt * 100)
-        musicInfo.leftHandProgress = Int(leftHandInt * 100)
+        musicInfo.rightHandProgress = rightHandInt
+        musicInfo.leftHandProgress = leftHandInt
         karaMojiRepository.addMusicInfo(musicInfo: musicInfo)
     }
 }
