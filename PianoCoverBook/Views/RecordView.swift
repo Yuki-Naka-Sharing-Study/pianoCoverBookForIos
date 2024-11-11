@@ -131,7 +131,11 @@ struct RecordView : View {
                     Text("完了")
                 }
                 .buttonStyle(.borderedProminent)
-                .disabled(viewModel.isNameEmpty)
+                .disabled(
+                    viewModel.isMusicNameEmpty
+                    || viewModel.isArtistNameEmpty
+                    || viewModel.isMemoEmpty
+                )
             }
         }
     }
