@@ -44,4 +44,16 @@ class RecordViewModel: ObservableObject {
     var isNameEmpty: Bool {
         inputNameText.trimmingCharacters(in: .whitespaces).isEmpty
     }
+    
+    var isMusicNameEmpty: Bool {
+        musicName.trimmingCharacters(in: .whitespaces).isEmpty
+    }
+    
+    var isArtistNameEmpty: Bool {
+        artistName.trimmingCharacters(in: .whitespaces).isEmpty
+    }
+    
+    var isMemoEmpty: Bool {
+        memo.trimmingCharacters(in: .whitespaces).isEmpty
+    }
 }
