@@ -37,4 +37,8 @@ class RecordViewModel: ObservableObject {
     var isMemoEmpty: Bool {
         memo.trimmingCharacters(in: .whitespaces).isEmpty
     }
+    
+    func handleAddMusicInfoButtonTap() {
+//        model.addNewMusicDataReg()
+    }
 }

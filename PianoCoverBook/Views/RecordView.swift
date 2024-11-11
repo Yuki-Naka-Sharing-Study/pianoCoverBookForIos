@@ -122,6 +122,7 @@ struct RecordView : View {
                 }
                 
                 Button(action: {
+                    viewModel.handleAddMusicInfoButtonTap()
                     dismiss()
                 }) {
                     Text("完了")
