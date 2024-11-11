@@ -17,4 +17,14 @@ struct RecordModel {
     var memoText = ""
     var rightHandInt = 0
     var leftHandInt = 0
+    
+    mutating func addMusicInfoReg() {
+        let musicInfo = MusicInfo()
+        musicInfo.musicName = musicNameText
+        musicInfo.artistName = artistNameNameText
+        musicInfo.memo = memoText
+        musicInfo.rightHandProgress = Int(rightHandInt * 100)
+        musicInfo.leftHandProgress = Int(leftHandInt * 100)
+        karaMojiRepository.addMusicInfo(musicInfo: musicInfo)
+    }
 }

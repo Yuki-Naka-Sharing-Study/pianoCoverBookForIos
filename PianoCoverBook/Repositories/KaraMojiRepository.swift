@@ -9,4 +9,12 @@ import RealmSwift
 
 class KaraMojiRepository {
     private let realm = try! Realm()
+    
+    /// 音楽情報を追加
+    func addMusicInfo(musicInfo: MusicInfo) {
+        try! realm.write {
+            realm.add(musicInfo, update: .modified)
+            print("音楽情報:", musicInfo)
+        }
+    }
 }

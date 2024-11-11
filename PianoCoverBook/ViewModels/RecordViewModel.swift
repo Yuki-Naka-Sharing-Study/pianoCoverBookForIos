@@ -49,6 +49,6 @@ class RecordViewModel: ObservableObject {
     }
     
     func handleAddMusicInfoButtonTap() {
-//        model.addNewMusicDataReg()
+        model.addMusicInfoReg()
     }
 }
