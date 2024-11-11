@@ -13,6 +13,7 @@ struct RecordView : View {
     
     @State private var artistName: String = ""
     @State private var musicName: String = ""
+    @State private var memo: String = ""
     
     @State private var rightHandCircleProgress: CGFloat = 1.0
     @State private var leftHandCircleProgress: CGFloat = 1.0
@@ -30,6 +31,7 @@ struct RecordView : View {
                     Text("曲名")
                         .font(.title3)
                         .padding(.leading)
+                    
                     TextField("ラ・カンパネラ", text: $musicName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
@@ -59,7 +61,7 @@ struct RecordView : View {
                         .font(.title3)
                         .padding(.leading)
                         .padding(.bottom)
-                    TextField("アルペジオが上手く弾けない。", text: $musicName)
+                    TextField("アルペジオが上手く弾けない。", text: $memo)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .background(Color.white)
                         .overlay(

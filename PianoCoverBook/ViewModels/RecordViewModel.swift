@@ -22,6 +22,24 @@ class RecordViewModel: ObservableObject {
         set { model.karaMojiNameText = newValue }
     }
     
+    // $musicName
+    var musicName: String {
+        get { model.karaMojiNameText }
+        set { model.karaMojiNameText = newValue }
+    }
+    
+    // $artistName
+    var artistName: String {
+        get { model.karaMojiNameText }
+        set { model.karaMojiNameText = newValue }
+    }
+    
+    // $memo
+    var memo: String {
+        get { model.karaMojiNameText }
+        set { model.karaMojiNameText = newValue }
+    }
+    
     // 以下、必要なコード
     var isNameEmpty: Bool {
         inputNameText.trimmingCharacters(in: .whitespaces).isEmpty
